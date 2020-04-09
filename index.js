@@ -19,12 +19,14 @@ return object
 
 
 function createEmployeeRecords(aoa){
-    let newArray = []
-    aoa.forEach(employee =>{
-        newArray.push(createEmployeeRecord(employee))
-    })
+    // let newArray = []
 
-    return newArray
+    // aoa.forEach(employee =>{
+    //     newArray.push(createEmployeeRecord(employee))
+    // })
+
+    return aoa.map(employee => createEmployeeRecord(employee))
+
 }
 
 
